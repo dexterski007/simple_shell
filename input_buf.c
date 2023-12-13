@@ -136,7 +136,7 @@ int linegetter(param_t *param, char **ptr, size_t *length)
 	c = stringsearch(buffer + i, '\n');
 	k = c ? 1 + (unsigned int)(c - buffer) : len;
 	new_p = allocreac(p, s, s ? s + k : k + 1);
-	if (!new_p) /* MALLOC FAILURE! */
+	if (!new_p)
 		return (p ? free(p), -1 : -1);
 
 	if (s)

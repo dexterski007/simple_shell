@@ -90,7 +90,7 @@ char **tokenstring1(char *str, char *delim)
 	if (!delim)
 		delim = " ";
 	for (i = 0; str[i] != '\0'; i++)
-		if (!checkdelim(str[i], delim) &&
+		if (!checkdelim(str[i], delim) && 
 	(checkdelim(str[i + 1], delim) || !str[i + 1]))
 			numwords++;
 

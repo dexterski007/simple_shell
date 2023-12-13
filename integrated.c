@@ -10,13 +10,13 @@ int quits(param_t *param)
 {
 	int exitcheck;
 
-	if (param->argv[1])  /* If there is an exit arguement */
+	if (param->argv[1])
 	{
 		exitcheck = erroralphatonum(param->argv[1]);
 		if (exitcheck == -1)
 		{
 			param->status = 2;
-			errexport(param, "Illegal number: ");
+			errexport(param, "error number: ");
 			putserror(param->argv[1]);
 			putcharerror('\n');
 			return (1);
