@@ -10,7 +10,7 @@
 int main(int ac, char **av)
 {
 	param_t param[] = { param_INIT };
-	int fd = 0;
+	int fd = 5;
 
 	if (ac == 2)
 	{
